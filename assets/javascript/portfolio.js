@@ -1,6 +1,8 @@
 /*
 
-Credits: 
+Credits:
+    - Lummit (source code, media: https://obnoxious.club/ | https://github.com/Lumm1t/ | https://steamcommunity.com/profiles/76561198033187031/)
+    - expl0it, shellcode.team (website template, big help with code)
     - Steam (emoticon: https://steamcommunity-a.akamaihd.net/economy/emoticon/mgh_17)
     - Trollface image (http://www.rw-designer.com/icon-image/7835-256x256x32.png)
     - Tumblr images/icons:
@@ -17,11 +19,6 @@ Thanks for:
     - jQuery Marquee
     - animate.css
     - typed.js
-
-~Lummit and obnoxious.club <3
-
-MADE BY Lummit  https://obnoxious.club/  https://github.com/Lumm1t/  https://steamcommunity.com/profiles/76561198033187031/
-Please, don't remove this, thanks! (You can delete this line)
 
 */
 
@@ -43,12 +40,12 @@ Please, don't remove this, thanks! (You can delete this line)
 
                 {
                     name: 'Lummit',
-                    link: '76561198033187031'
+                    link: 'https://steamcommunity.com/profiles/76561198033187031'
                 },
                 
                 {
                     name: 'Neso',
-                    link: '76561198301647503'
+                    link: 'https://steamcommunity.com/profiles/76561198301647503'
                 }
           
             ];
@@ -58,7 +55,7 @@ Please, don't remove this, thanks! (You can delete this line)
 
                 var link = links[i];
 
-                $('#marquee').append('<a href="https://steamcommunity.com/profiles/' + link.link + '" target="_BLANK">' + link.name + '</a>');
+                $('#marquee').append('<a href="' + link.link + '" target="_BLANK">' + link.name + '</a>');
 
                 link = $('#marquee').children('a').last();
                 
@@ -150,7 +147,7 @@ Please, don't remove this, thanks! (You can delete this line)
             document.body.appendChild(img);
 
         });
-		
+
         setInterval( function () {
             $(".troll").remove();
         }, 600);
@@ -170,7 +167,7 @@ Please, don't remove this, thanks! (You can delete this line)
         });
 
         var writeLine = function (text, speed, timeout, callback)
- 		{
+        {
 
             timeout = (typeof timeout === "number") ? timeout : [0, callback = timeout];
 
@@ -203,17 +200,17 @@ Please, don't remove this, thanks! (You can delete this line)
                         + "</i>! By the way, nice to see someone from " + ((data.country_name) ? data.country_name : 'your country') + " here!"], 30, 500, function () {
 
                         if (app.skippedIntro)
-                        	return;
-                        
+                            return;
+
                         clearCursor();
 
                         writeLine(["<i style='color: #F62459'>obnoxious.club $$$</i>"], 120, 500, function () {
 
                             timeouts.push(setTimeout(function () {
 
-                            	if (app.skippedIntro)
-                            		return;
-                                	
+                                if (app.skippedIntro)
+                                    return;
+
                                 clearCursor();
 
                                 setTimeout(function () {
@@ -223,7 +220,7 @@ Please, don't remove this, thanks! (You can delete this line)
                                 }, 500);
 
                             }, 1000));
-                
+
                         });
 
                     });
@@ -259,18 +256,18 @@ Please, don't remove this, thanks! (You can delete this line)
                     duplicated: true
                 });
 
-            	setTimeout(function () {
-            		$('.brand-header').animateCss(app.effects[ Math.floor(Math.random() * app.effects.length) ]);
-        		}, 200);
+                setTimeout(function () {
+                    $('.brand-header').animateCss(app.effects[ Math.floor(Math.random() * app.effects.length) ]);
+                }, 200);
 
                 setTimeout(function () {
-                	var typed = new Typed("#brand", {
-                	 strings: app.brandDescription,
-                	 typeSpeed: 40,
-                	 onComplete: function () {
-                		clearCursor()
+                    var typed = new Typed("#brand", {
+                     strings: app.brandDescription,
+                     typeSpeed: 40,
+                     onComplete: function () {
+                        clearCursor()
                      }
-                	});
+                    });
                 }, 1350);
 
                 setTimeout(function () {
