@@ -1,5 +1,5 @@
-﻿// MADE BY Lummit  /*/  https://obnoxious.club/  /*/  https://github.com/Lumm1t/  /*/  https://steamcommunity.com/profiles/76561198033187031/
-// Please, don't remove this, thanks! (You can delete this line)
+// Made by Lummit | https://obnoxious.club/ | https://github.com/Lumm1t/ | https://steamcommunity.com/profiles/76561198033187031/
+// Credits to expl0it, shellcode.team
 
 var _app = function ()
 {
@@ -24,7 +24,7 @@ var _app = function ()
     this.titleChanger = function (text, delay)
     {
         text = text ||
-            ['Lummit', 'Neso', '=', 'obnoxious.club', 'song name: KUSO GVKI - Cinnamon (feat. Apfel) (splash! Mag Premiere)'];
+            ['Lummit', 'Neso', '=', 'obnoxious.club', 'Song name: KUSO GVKI - Cinnamon (feat. Apfel) (splash! Mag Premiere)'];
         delay = delay || 2000;
 
         var counter = 0;
@@ -37,7 +37,7 @@ var _app = function ()
         }, delay);
     }
 
-    // it's future, dear pasters.
+    // It's future, dear pasters.
 
     this.iconChanger = function (urls, delay)
     {
