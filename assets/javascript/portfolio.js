@@ -40,7 +40,7 @@ Thanks for:
 
                 {
                     name: 'Lummit',
-                    link: 'https://steamcommunity.com/profiles/76561198033187031'
+                    link: '' // My discord: Lummit#0201
                 },
                 
                 {
