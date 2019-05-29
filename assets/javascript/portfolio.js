@@ -1,7 +1,7 @@
 /*
 
 Credits:
-    - Lummit (source code, media: https://obnoxious.club/ | https://github.com/Lumm1t/ | https://steamcommunity.com/profiles/76561198033187031/)
+    - Lummit (source code, media: https://obnoxious.club/ | https://github.com/Lumm1t/ | https://steamcommunity.com/profiles/76561197960310012/ | Discord: Lummit#0201)
     - expl0it, shellcode.team (website template, big help with code)
     - Steam (emoticon: https://steamcommunity-a.akamaihd.net/economy/emoticon/mgh_17)
     - Trollface image (http://www.rw-designer.com/icon-image/7835-256x256x32.png)
@@ -40,7 +40,7 @@ Thanks for:
 
                 {
                     name: 'Lummit',
-                    link: '' // My discord: Lummit#0201
+                    link: 'https://steamcommunity.com/profiles/76561197960310012'
                 },
                 
                 {
