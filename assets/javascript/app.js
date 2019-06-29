@@ -1,4 +1,4 @@
-// Made by Lummit | https://obnoxious.club/ | https://github.com/Lumm1t/
+// Made by Lummit | https://obnoxious.club/ | https://github.com/Lumm1t/ | Discord: Lummit#0201
 // Credits to expl0it, shellcode.team
 
 var _app = function ()
