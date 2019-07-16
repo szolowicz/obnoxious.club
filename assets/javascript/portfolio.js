@@ -40,7 +40,7 @@ Thanks for:
 
                 {
                     name: 'Lummit',
-                    link: 'https://steamcommunity.com/profiles/76561198066466361'
+                    link: 'https://steamcommunity.com/profiles/76561197960276740'
                 },
                 
                 {
