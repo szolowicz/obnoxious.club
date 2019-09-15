@@ -45,7 +45,12 @@ Thanks for:
                 
                 {
                     name: 'Neso',
-                    link: 'http://steamcommunity.com/profiles/76561198871152818'
+                    link: 'http://steamcommunity.com/profiles/76561198193201687'
+                },
+                
+                {
+                    name: 'loljuxd',
+                    link: 'http://steamcommunity.com/profiles/76561198188043690'
                 }
           
             ];
