@@ -23,7 +23,7 @@
 <body>
     <div id="main">
         <table class="box">
-         <tbody>
+        <tbody>
             <tr><td><span id="line1" style="white-space:pre;"></span></td></tr>
             <tr><td><span id="line2" style="white-space:pre;"></span></td></tr>
             <tr><td><span id="line3 space" style="white-space:pre;"> </span></td></tr>
@@ -36,6 +36,7 @@
         <h1 class="brand-header">
             <a href="https://steamcommunity.com/groups/obnoxious_club" target="_BLANK">obnoxious.club</a>
         </h1>
+        
         <p><span id="brand"></span></p>
     </div>
 
@@ -45,14 +46,15 @@
 
     <div class="background" style="display: none;">
         <div id="pattern"></div>
+
         <audio id="audio" loop="">
-          <source src="assets/others/KUSO GVKI - Cinnamon (feat. Apfel) (splash! Mag Premiere).mp4" type="audio/mp4">
-          <script>
+            <source src="assets/others/KUSO GVKI - Cinnamon (feat. Apfel) (splash! Mag Premiere).mp4" type="audio/mp4">
+            <script>
                 var audio = document.getElementById("audio");
 
                 app.audioElement = audio;
                 app.audioElement.volume = 0;
-          </script>
+            </script>
         </audio>
 
         <video id="background" loop="">
@@ -74,8 +76,12 @@
         <i><a href="https://discordapp.com/invite/dgc37sk" target="_BLANK">Discord server</a></i>
     </div>
 
+    <div class="sponsor">
+        <a href="https://www.vultr.com/" target="_BLANK"><img src="assets/images/vultr.png" alt="VULTR"></a>
+    </div>
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/stylesheet.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/stylesheet.css">
     <script type="text/javascript" src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="assets/javascript/lib/jquery.marquee.min.js"></script>
     <script type="text/javascript" src="assets/javascript/lib/jquery.cookie.min.js"></script>
