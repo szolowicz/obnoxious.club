@@ -1,12 +1,11 @@
-// Made by Lummit | https://obnoxious.club/ | https://github.com/Lumm1t/ | Discord: Lummit#0201
+// Made by Lummit - https://obnoxious.club/ | https://github.com/Lumm1t/ | Discord: Lummit#0201
 // Credits to expl0it, shellcode.team
 
-var _app = function ()
-{
+var _app = function () {
     this.id = 0;
     this.videoElement = null;
     this.audioElement = null;
-    this.musicVolume = 0.2;
+    this.musicVolume = 0.12;
     this.musicFadeIn = 4000;
     this.skippedIntro = false;
     this.backgroundToggler = false;
@@ -21,10 +20,9 @@ var _app = function ()
         "hack vs hack team"
     ];
 
-    this.titleChanger = function (text, delay)
-    {
+    this.titleChanger = function (text, delay) {
         text = text ||
-            ['Lummit', 'Neso', 'loljuxd', '=', 'obnoxious.club', 'Song name: KUSO GVKI - Cinnamon (feat. Apfel) (splash! Mag Premiere)'];
+            ['Lummit', 'Neso', 'loljuxd', 'Vez', 'mannin', '=', 'obnoxious.club', 'Song name: KUSO GVKI - Cinnamon (feat. Apfel) (splash! Mag Premiere)'];
         delay = delay || 2000;
 
         var counter = 0;
@@ -37,10 +35,7 @@ var _app = function ()
         }, delay);
     }
 
-    // It's future, dear pasters.
-
-    this.iconChanger = function (urls, delay)
-    {
+    this.iconChanger = function (urls, delay) {
         if (!urls)
             return;
 
@@ -49,8 +44,7 @@ var _app = function ()
         var counter = 0;
         
         setInterval(function () {
-            if(counter < urls.length) 
-            {
+            if(counter < urls.length) {
                 var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
                 link.type = 'image/x-icon';
                 link.rel = 'shortcut icon';
