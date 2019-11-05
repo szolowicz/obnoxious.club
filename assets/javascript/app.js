@@ -1,5 +1,6 @@
 // Made by Lummit - https://obnoxious.club/ | https://github.com/Lumm1t/ | Discord: Lummit#0201
 // Credits to expl0it, shellcode.team
+// GitHub: https://github.com/Lumm1t/obnoxious.club
 
 var _app = function () {
     this.id = 0;
