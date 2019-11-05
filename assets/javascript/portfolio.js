@@ -22,6 +22,8 @@ Thanks for:
     - jQuery Marquee
     - animate.css
     - typed.js
+    
+GitHub: https://github.com/Lumm1t/obnoxious.club
 
 */
 
