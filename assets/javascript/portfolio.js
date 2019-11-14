@@ -182,7 +182,7 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
     };
 
     (function () {
-        $.getJSON('http://ip-api.com/json/', function (data) {
+        $.getJSON('https://ip-api.com/json/', function (data) {
 
             writeLine(["Authenticating...", "Granting access to <span style='font-size: 14px; color: #06d;'>[unknown]</span>..."], 30, function () {
 
