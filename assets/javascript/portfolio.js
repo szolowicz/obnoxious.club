@@ -182,7 +182,7 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
     };
 
     (function () {
-        $.getJSON('http://ipgeolocation.com/?json=1', function (data) {
+        $.getJSON('https://freegeoip.app/json/', function (data) {
 
             writeLine(["Authenticating...", "Granting access to <span style='font-size: 14px; color: #06d;'>[unknown]</span>..."], 30, function () {
 
@@ -194,7 +194,7 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
                 var usernames = ["user", "dude"];
 
                 writeLine(["Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>", "Welcome back, <i style='color: #0f0'>" +  ((data.ip) ? data.ip : usernames[Math.floor(Math.random()*usernames.length)]) 
-                    + "</i>! By the way, nice to see someone from " + ((data.country) ? data.country : 'your country') + " here!"], 30, 500, function () {
+                    + "</i>! By the way, nice to see someone from " + ((data.country_name) ? data.country_name : 'your country') + " here!"], 30, 500, function () {
 
                     if (app.skippedIntro)
                         return;
