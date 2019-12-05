@@ -42,7 +42,7 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
         var links = [
             {
                 name: 'Lummit',
-                link: ''
+                link: '76561197960276740'
             },
                 
             {
