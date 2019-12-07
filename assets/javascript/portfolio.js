@@ -52,7 +52,7 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
                 
             {
                 name: 'loljuxd',
-                link: '76561198188043690'
+                link: '76561197985625197'
             },
 
             {
