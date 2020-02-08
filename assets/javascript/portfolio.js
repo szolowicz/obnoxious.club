@@ -278,7 +278,7 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
                     $.cookie('videoTime', app.videoElement.currentTime, { expires: 1 });
                 }, false);
 
-                $('.marquee-container').fadeIn(100);
+                $('.marquee-container').css('visibility','visible').hide().fadeIn(100);
 
                 $('.marquee-container').animateCss('zoomIn');
 
