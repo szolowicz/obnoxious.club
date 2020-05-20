@@ -7,13 +7,17 @@ Preview - https://obnoxious.club/
 
 ## Features
 * Title and icon changer (every 2 seconds)
-* Cool intro
-* Mobile and tablet check (if true - remove background video and music, then set background image)
+* Cool intro (displays ip and country)
+* Logo animations
+* Brand description with typed.js
+* Mobile and tablet check (`if true - remove background video and music, then set background image`)
+* Save background video time in cookies (then resume)
+* Music fade in
 * Modern design (probably lol)
 
 ## Screenshots
 ###### \*click for larger size\*
-Intro (displays ip and country):
+Intro:
 
 [<img width="500" src="https://i.imgur.com/iaAM1B0.png" alt="Intro">](https://i.imgur.com/iaAM1B0.png)
 
