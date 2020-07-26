@@ -182,7 +182,7 @@ GitHub: https://github.com/Lumm1t/obnoxious.club
     };
 
     (function () {
-        $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=bc46132fb5914b928799bfe862a1258d', function (data) {
+        $.getJSON('https://api.ipgeolocation.io/ipgeo?apiKey=1785ed53312f42c7b5ef89f65c3faa1a', function (data) {
 
             writeLine(["Authenticating...", "Granting access to <span style='font-size: 14px; color: #06d;'>[unknown]</span>..."], 30, function () {
 
