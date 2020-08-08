@@ -58,17 +58,17 @@ var ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=1785ed53312f42c7b
 
       {
         name: 'loljuxd',
-        link: '76561197985625197',
+        link: '76561198016198032',
       },
 
       {
-        name: 'Vez',
-        link: '76561198823371232',
+        name: 'Lost',
+        link: '76561199079530557',
       },
 
       {
         name: 'mannin',
-        link: '76561198053882179',
+        link: '76561197975672336',
       },
     ];
 
@@ -101,8 +101,8 @@ var ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=1785ed53312f42c7b
     event.preventDefault();
   });
 
-  document.body.onkeyup = function (e) {
-    if (e.keyCode == 32 && app.skippedIntro) {
+  document.body.onkeyup = function (event) {
+    if (event.keyCode == 32 && app.skippedIntro) {
       if (app.backgroundToggler) {
         app.videoElement.play();
         app.audioElement.play();
@@ -138,9 +138,11 @@ var ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=1785ed53312f42c7b
   $.fn.extend({
     animateCss: function (animationName) {
       var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
       this.addClass('animated ' + animationName).one(animationEnd, function () {
         $(this).removeClass('animated ' + animationName);
       });
+
       return this;
     },
   });
