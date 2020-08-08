@@ -15,7 +15,8 @@ var _app = function () {
   this.brandDescription = ['11 years old kids team', 'pro roblox players', 'xane ddosers', 'trashtalkers', 'esoterik fanboys', 'hack vs hack team'];
 
   this.titleChanger = function (text, delay) {
-    text = text || ['Lummit', 'Neso', 'loljuxd', 'Vez', 'mannin', '=', 'obnoxious.club', 'Song name: KUSO GVKI - Cinnamon (feat. Apfel) (splash! Mag Premiere)'];
+    if (!text) return;
+
     delay = delay || 2000;
 
     var counter = 0;
