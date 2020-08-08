@@ -49,22 +49,18 @@ $(document).ready(() => {
       name: 'Lummit',
       link: '76561197960276740',
     },
-
     {
       name: 'Neso',
       link: '76561198193201687',
     },
-
     {
       name: 'loljuxd',
       link: '76561198016198032',
     },
-
     {
       name: 'Lost',
       link: '76561199079530557',
     },
-
     {
       name: 'mannin',
       link: '76561197975672336',
@@ -82,7 +78,7 @@ $(document).ready(() => {
   }
 
   if (window.mobileAndTabletCheck()) {
-    $('#background').replaceWith('<div id="background" style="background-image: url(https://obnoxious.club/assets/images/mobile-background.jpg);"></div>');
+    $('#background').replaceWith('<div id="background" style="background-image: url(assets/images/mobile-background.jpg);"></div>');
 
     app.shouldIgnoreVideo = true;
   }
