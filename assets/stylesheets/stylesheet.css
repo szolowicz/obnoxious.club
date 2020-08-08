@@ -7,166 +7,170 @@
 */
 
 html {
-	cursor:url("../others/cursor.png"), default;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  cursor: url('../others/cursor.png'), default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 a {
-	color: #e4e3e3;
-	text-decoration: none;
+  color: #e4e3e3;
+  text-decoration: none;
 }
 
-body, input {
-	color: #e4e3e3;
-	background-color: #000
+body,
+input {
+  color: #e4e3e3;
+  background-color: #000;
 }
 
 @font-face {
-	font-family: courier_regular;
-	src: url("../others/Consolas.ttf");
+  font-family: courier_regular;
+  src: url('../others/Consolas.ttf');
 }
 
 * {
-	padding: 0;
-	margin: 0;
-	font-family: consolas, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: consolas, sans-serif;
 }
 
 body {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 input {
-	outline: 0;
-	border: none;
+  outline: 0;
+  border: none;
 }
 
 td {
-	padding: 3px;
+  padding: 3px;
 }
 
 hr {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	border-style: dashed
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: dashed;
 }
 
 pre {
-    font-size: 1.15em;
+  font-size: 1.15em;
 }
 
-.box, body, input {
-	background-color: #000;
+.box,
+body,
+input {
+  background-color: #000;
 }
 
 .box {
-	padding: 15px;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .top-right {
-	position: absolute;
-	top: 0;
-	right: 5px;
+  position: absolute;
+  top: 0;
+  right: 5px;
 }
 
 .container {
-	position: fixed;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #brand {
-    margin-left: 0.65pc;
+  margin-left: 0.65pc;
 }
 
 .marquee-container {
-	position: absolute;
-	width: 100%;
-	bottom: 10%;
-	text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  text-align: center;
 }
 
 #marquee {
-	width: 420px;
-	overflow: hidden;
-	display: inline-block;
-	margin-bottom: -4.5px;
-	font-size: 15px;
+  width: 420px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: -4.5px;
+  font-size: 15px;
 }
 
 .emoticon {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .main {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .background {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: -3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -3;
 }
 
 #pattern {
-	background: transparent url("../others/dot.png") repeat 0 0;
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	z-index: -1;
-	opacity: 1;;
+  background: transparent url('../others/dot.png') repeat 0 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  opacity: 1;
 }
 
-#pattern, #background {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+#pattern,
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #background {
-	z-index: -2;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 135%;
-	min-height: 110%;
-	width: auto;
-	height: auto;
-	transform: translateX(-50%) translateY(-50%);
-	background-size: cover;
-	overflow: hidden;
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
+  z-index: -2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 135%;
+  min-height: 110%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  overflow: hidden;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
-	right: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
 }
 
 .trollface-light {
-	-webkit-filter: invert(100%);
-	-moz-filter: invert(100%);
-	-ms-filter: invert(100%);
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -ms-filter: invert(100%);
 }
 
 ::-webkit-scrollbar {
-	width: 0;
+  width: 0;
 }
