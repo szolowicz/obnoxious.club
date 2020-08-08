@@ -101,14 +101,6 @@ var ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=1785ed53312f42c7b
     event.preventDefault();
   });
 
-  $(window).on('keydown', function () {
-    if (event.keyCode == 123) return false;
-    else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) return false;
-    else if (event.ctrlKey && event.keyCode == 73) return false;
-    else if (event.ctrlKey && event.shiftKey && event.keyCode == 74) return false;
-    else if (event.ctrlKey && event.keyCode == 74) return false;
-  });
-
   document.body.onkeyup = function (e) {
     if (e.keyCode == 32 && app.skippedIntro) {
       if (app.backgroundToggler) {
