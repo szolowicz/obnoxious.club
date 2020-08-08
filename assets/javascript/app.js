@@ -2,7 +2,7 @@
 // Credits to expl0it, shellcode.team
 // GitHub: https://github.com/Lumm1t/obnoxious.club
 
-var _app = function () {
+const _app = function () {
   this.id = 0;
   this.videoElement = null;
   this.audioElement = null;
@@ -19,7 +19,7 @@ var _app = function () {
 
     delay = delay || 2000;
 
-    var counter = 0;
+    let counter = 0;
 
     setInterval(function () {
       if (counter < text.length) document.title = text[counter++];
@@ -32,14 +32,16 @@ var _app = function () {
 
     delay = delay || 2000;
 
-    var counter = 0;
+    let counter = 0;
 
     setInterval(function () {
       if (counter < urls.length) {
-        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+
         link.type = 'image/x-icon';
         link.rel = 'shortcut icon';
         link.href = urls[counter];
+
         document.getElementsByTagName('head')[0].appendChild(link);
       } else counter = 0;
 
@@ -48,4 +50,4 @@ var _app = function () {
   };
 };
 
-var app = new _app();
+const app = new _app();
