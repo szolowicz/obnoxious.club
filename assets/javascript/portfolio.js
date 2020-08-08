@@ -74,7 +74,7 @@ $(document).ready(() => {
   for (let i in links) {
     let link = links[i];
 
-    $('#marquee').append('<a href="https://steamcommunity.com/profiles/' + link.link + '" target="_BLANK">' + link.name + '</a>');
+    $('#marquee').append(`<a href="https://steamcommunity.com/profiles/${link.link}" target="_BLANK">${link.name}</a>`);
 
     link = $('#marquee').children('a').last();
 
@@ -117,12 +117,14 @@ document.body.onkeyup = (event) => {
 $('html').on('contextmenu', (event) => {
   const img = document.createElement('img');
 
+  const trollfaceLight = app.skippedIntro ? '' : 'trollface-light';
+
   img.src = 'assets/others/trollface.jpg';
   img.width = 64;
   img.height = 64;
   img.alt = 'obnoxious.club';
-  img.style = 'position: absolute; left: ' + event.pageX + 'px; top: ' + event.pageY + 'px; z-index: 10';
-  img.className = 'troll' + (app.skippedIntro ? '' : ' trollface-light');
+  img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
+  img.className = `troll ${trollfaceLight}`;
 
   document.body.appendChild(img);
 });
@@ -139,8 +141,8 @@ $.fn.extend({
   animateCss: function (animationName) {
     const animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-    this.addClass('animated ' + animationName).one(animationEnd, () => {
-      $(this).removeClass('animated ' + animationName);
+    this.addClass(`animated ${animationName}`).one(animationEnd, () => {
+      $(this).removeClass(`animated ${animationName}`);
     });
 
     return this;
@@ -150,8 +152,10 @@ $.fn.extend({
 const writeLine = (text, speed, timeout, callback) => {
   timeout = typeof timeout === 'number' ? timeout : [0, (callback = timeout)];
 
+  const lineNumber = app.id !== 2 ? ++app.id : (app.id += 2);
+
   setTimeout(() => {
-    const typed = new Typed('#line' + (app.id !== 2 ? ++app.id : (app.id += 2)), {
+    const typed = new Typed(`#line${lineNumber}`, {
       strings: text,
       typeSpeed: speed,
       onComplete: callback,
@@ -167,12 +171,15 @@ $.getJSON(ipgeolocation, (data) => {
 
     const usernames = ['user', 'dude'];
 
-    writeLine(["Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>", "Welcome back, <i style='color: #0f0'>" + (data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)]) + '</i>! By the way, nice to see someone from ' + (data.country_name ? data.country_name : 'your country') + ' here!'], 30, 500, () => {
+    const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
+    const country = data.country_name ? data.country_name : 'your country';
+
+    writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome back, <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from ${country} here!`], 30, 500, () => {
       if (app.skippedIntro) return;
 
       clearCursor();
 
-      writeLine(["<i style='color: #F62459'>obnoxious.club $$$</i>"], 120, 500, () => {
+      writeLine([`<i style='color: #F62459'>obnoxious.club $$$</i>`], 120, 500, () => {
         timeouts.push(
           setTimeout(() => {
             if (app.skippedIntro) return;
@@ -219,6 +226,7 @@ const skipIntro = () => {
       const typed = new Typed('#brand', {
         strings: app.brandDescription,
         typeSpeed: 40,
+
         onComplete: () => {
           clearCursor();
         },
