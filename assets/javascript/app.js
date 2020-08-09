@@ -2,19 +2,19 @@
 // Credits to expl0it, shellcode.team
 // GitHub: https://github.com/Lumm1t/obnoxious.club
 
-const _app = function () {
-  this.id = 0;
-  this.videoElement = null;
-  this.audioElement = null;
-  this.musicVolume = 0.12;
-  this.musicFadeIn = 4000;
-  this.skippedIntro = false;
-  this.backgroundToggler = false;
-  this.shouldIgnoreVideo = false;
-  this.effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
-  this.brandDescription = ['11 years old kids team', 'pro roblox players', 'xane ddosers', 'trashtalkers', 'esoterik fanboys', 'hack vs hack team'];
+class _app {
+  id = 0;
+  videoElement = null;
+  audioElement = null;
+  musicVolume = 0.12;
+  musicFadeIn = 4000;
+  skippedIntro = false;
+  backgroundToggler = false;
+  shouldIgnoreVideo = false;
+  effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
+  brandDescription = ['11 years old kids team', 'pro roblox players', 'xane ddosers', 'trashtalkers', 'esoterik fanboys', 'hack vs hack team'];
 
-  this.titleChanger = (text, delay) => {
+  titleChanger = (text, delay) => {
     if (!text) return;
 
     delay = delay || 2000;
@@ -27,7 +27,7 @@ const _app = function () {
     }, delay);
   };
 
-  this.iconChanger = (urls, delay) => {
+  iconChanger = (urls, delay) => {
     if (!urls) return;
 
     delay = delay || 2000;
@@ -48,6 +48,6 @@ const _app = function () {
       ++counter;
     }, delay);
   };
-};
+}
 
 const app = new _app();
