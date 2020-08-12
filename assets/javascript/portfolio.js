@@ -33,7 +33,7 @@ const ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=1785ed53312f42c
 
 const timeouts = [];
 
-const mobileAndTabletCheck = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 $(document).ready(() => {
   const links = [
@@ -69,7 +69,7 @@ $(document).ready(() => {
     if (i != links.length - 1) $('#marquee').append(' <img class="emoticon" src="assets/others/mgh_17.png"> ');
   }
 
-  if (mobileAndTabletCheck) {
+  if (mobileAndTabletCheck()) {
     $('#background').replaceWith('<div id="background" style="background-image: url(assets/images/mobile-background.jpg);"></div>');
 
     app.shouldIgnoreVideo = true;
